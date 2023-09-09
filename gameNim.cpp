@@ -80,6 +80,7 @@ void vivod(int n,int m){
 }
 
 void fill(){
+    int p=1;
     for(int i =0;i<n;i++){
         for(int j =0;j<p;j++){
             Vec[i][j]=1;
