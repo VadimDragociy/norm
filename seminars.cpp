@@ -116,36 +116,93 @@
 
 //4.3
 
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// #include <cmath>
+// using namespace std;
+
+// int factorial(int fact){
+//     int frog =1;
+
+//     for( int i =1;i<=fact;i++){
+//         frog=frog*i;
+
+//     }
+//     return frog;
+// }
+// int main(){
+//     float e=1;
+//     float fact=1;
+//     float n=0;
+//     for (int k=1;k<100;k++){
+//         fact=factorial(k);
+        
+
+//         n=1/float(k);
+     
+//         e=k/pow(fact,n);
+        
+//         cout<< e - exp(1)<<endl;
+        
+//     }
+    
+
+// }
+
+
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// #include <cmath>
+// using namespace std;
+
+// int main(){
+//     int t=0;
+//     int n=10;
+//     int k=3;
+//     int start=0;
+//     int counter=0;
+//     string s="WBWBBBWWWW";
+//     cin>> t>>n>>k;
+//     cin>> s;
+//     while(true){
+//         for(int i=start;i<s.length();++i){
+//             if(s[i]=='B'){
+//                 start=i+k+1;
+//                 counter+=1;
+                
+//                 break;
+//             }
+//             else{
+//                 start+=1;
+//             }
+//         }
+//         if (start>=s.length()){
+//             cout<<counter;
+//             break;
+//         }
+        
+//     }
+// }
+
+
 #include <iostream>
 #include <vector>
 #include <string>
 #include <cmath>
 using namespace std;
 
-int factorial(int fact){
-    int frog =1;
-
-    for( int i =1;i<=fact;i++){
-        frog=frog*i;
-
-    }
-    return frog;
-}
 int main(){
-    float e=1;
-    float fact=1;
-    float n=0;
-    for (int k=1;k<100;k++){
-        fact=factorial(k);
-        
+    string line="src1";
 
-        n=1/float(k);
-     
-        e=k/pow(fact,n);
-        
-        cout<< e - exp(1)<<endl;
-        
+    string opera_tor;
+    for(char ch:line){
+       
+        opera_tor=opera_tor+ch;
+        if(opera_tor.find("src")==0 & opera_tor.length()>3){
+            cout<<opera_tor<<1<<endl;
+        }
+         cout<<2<<endl;
     }
-    
-
 }
